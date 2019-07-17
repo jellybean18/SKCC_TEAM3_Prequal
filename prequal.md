@@ -135,8 +135,13 @@
  ``` 
   ![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/databases.PNG?raw=true)
  ``` 
-6. cloudera manager db 설정
+6. cloudera manager 설치
+sudo yum install cloudera-manager-daemons cloudera-manager-server
+7. cloudera manager db 설정
 sudo /usr/share/cmf/schema/scm_prepare_database.sh mysql scm scm password
 db.mgmt.properries 존재한다면
 sudo rm /etc/cloudera-scm-server/db.mgmt.properties
+8. cloudera manager 실행
+sudo systemctl start cloudera-scm-server
+sudo tail -f /var/log/cloudera-scm-server/cloudera-scm-server.log --> 로그 확인
 ```
