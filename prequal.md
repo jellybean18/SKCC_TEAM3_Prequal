@@ -18,6 +18,9 @@
 ```
 3. If you have ext-based volumes, list the reserve space setting
  1) 명령어로 확인 -> fsck -a /dev/nvme0n1p1
+```
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/4.png?raw=true)
+```
  
 4. Disable transparent hugepage support
  1) cat /sys/kernel/mm/transparent_hugepage/enabled 상태확인
@@ -30,10 +33,18 @@
  4) sudo vi /etc/default/grub 편집하여 아래내용 추가
     transparent_hugepage=never
  5) 명령어 실행 -> grub2-mkconfig -o /boot/grub2/grub.cfg
- 
+
+```
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/5.png?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/6.png?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/7.png?raw=true)
+```
 5. List your network interface configuration
  1) ip addr 실행하여 상태확인
- 
+```
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/8.png?raw=true)
+```
+
 6. Show that forward and reverse host lookups are correctly resolved
  1) centos 계정 비밀번호 설정
    sudo passwd centos --> admin으로 통일
