@@ -13,7 +13,9 @@
 ```
 2. Show the mount attributes of your volume(s)
  1) 명령어로 확인 -> df -h
-
+```
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/3.png?raw=true)
+```
 3. If you have ext-based volumes, list the reserve space setting
  1) 명령어로 확인 -> fsck -a /dev/nvme0n1p1
  
