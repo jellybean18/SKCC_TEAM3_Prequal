@@ -159,3 +159,6 @@ sudo tail -f /var/log/cloudera-scm-server/cloudera-scm-server.log --> 로그 확
 ```
 ![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/db_test.PNG?raw=true)
 ```
+4. 모든 설치 완료 된 모습
+```
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/finish.PNG?raw=true)
