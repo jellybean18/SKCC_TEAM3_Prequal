@@ -92,7 +92,7 @@
  baseurl=https://archive.cloudera.com/cm5/redhat/7/x86_64/cm/5.15.2/
 
 2. JDK, JDBC 설치(모든 host)
- 1) jdk -> sudo yum install oracle-j2sdk1.7 
+ 1) jdk -> sudo yum install java-1.8.0-openjdk-devel.x86_64
  2) jdbc -> 
     wget https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.47.tar.gz
     tar zxvf mysql-connector-java-5.1.47.tar.gz
