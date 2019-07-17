@@ -132,8 +132,9 @@
   SHOW DATABASES;
  
   EXIT;
+ ``` 
   ![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/databases.PNG?raw=true)
-  
+ ```
   
   
 
