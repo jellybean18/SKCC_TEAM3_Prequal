@@ -109,6 +109,8 @@
    sudo systemctl start mariadb
  
  5. MySQL DB생성 및 권한부여 (CM host)
+ mysql -u root -p --> db 접속
+ 
   CREATE DATABASE scm DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
   CREATE DATABASE amon DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
   CREATE DATABASE rman DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
