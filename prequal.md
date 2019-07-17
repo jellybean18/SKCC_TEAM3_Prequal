@@ -147,7 +147,15 @@ sudo tail -f /var/log/cloudera-scm-server/cloudera-scm-server.log --> 로그 확
 ```
 ##3. Install a cluster and deploy CDH
 ```
-host에 node 명 입력 하여 connection test
+1. host에 node 명 입력 하여 connection test
 ```
 ![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/host.PNG?raw=true)
+```
+2. parcel에서 5.15.2 확인 후 선택하여 설치 진행
+```
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/parcel.PNG?raw=true)
+```
+3. install 완료 후 설치 서비스 선택하여 DB 정보 입력
+```
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/db_test.PNG?raw=true)
 ```
