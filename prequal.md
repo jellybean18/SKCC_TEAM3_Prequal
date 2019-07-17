@@ -134,8 +134,9 @@
   EXIT;
  ``` 
   ![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/databases.PNG?raw=true)
- ```
-  
-  
-
+ ``` 
+6. cloudera manager db 설정
+sudo /usr/share/cmf/schema/scm_prepare_database.sh mysql scm scm password
+db.mgmt.properries 존재한다면
+sudo rm /etc/cloudera-scm-server/db.mgmt.properties
 ```
