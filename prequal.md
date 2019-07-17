@@ -60,10 +60,21 @@
 ## 2. Cloudera Manger 구성
 
 ```
-* CM 5.15.2 Repo 설정
+1. CM 5.15.2 Repo 설정
  sudo yum install -y wget
  sudo wget https://archive.cloudera.com/cm5/redhat/7/x86_64/cm/cloudera-manager.repo -P /etc/yum.repos.d/
  sudo vi /etc/yum.repos.d/cloudera-manager.repo 편집하여 아래내용 변경
  baseurl=https://archive.cloudera.com/cm5/redhat/7/x86_64/cm/5.15.2/
+
+2. JDK, JDBC 설치
+ 1) jdk -> sudo yum install oracle-j2sdk1.7 
+ 2) jdbc -> 
+    wget https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.47.tar.gz
+    tar zxvf mysql-connector-java-5.1.47.tar.gz
+    sudo mkdir -p /usr/share/java/
+    cd mysql-connector-java-5.1.47
+    sudo cp mysql-connector-java-5.1.47-bin.jar /usr/share/java/mysql-connector-java.jar
+    
+    
 
 '''
