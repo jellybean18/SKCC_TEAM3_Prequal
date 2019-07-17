@@ -54,6 +54,11 @@
    PasswordAuthentication no 주석 처리
  3) hostname 설정
    sudo hostnamectl set-hostname 노드번호.team3.com (ex) nd1.team3.com)
+```
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/9.png?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/10.png?raw=true)
+```
+   
  4) /etc/hosts 설정
    172.31.0.147 nd1.team3.com nd1
    172.31.2.54 nd2.team3.com nd2
@@ -72,6 +77,9 @@
  sudo systemctl start ntpd --> 서비스 시작
  systemctl status ntpd --> 서비스 상태 확인
 
+```
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/11.png?raw=true)
+```
 ```
 
 ## 2. Cloudera Manger 구성
