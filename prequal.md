@@ -6,6 +6,9 @@
   -> sysctl vm.swappiness
  2) 영구 적용 위해 /etc/sysctl.conf 추가 필요 
   -> vi /etc/sysctl.conf --> vm.swappiness = 1 추가
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/1.png?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/2.png?raw=true)
+  
 
 2. Show the mount attributes of your volume(s)
  1) 명령어로 확인 -> df -h
