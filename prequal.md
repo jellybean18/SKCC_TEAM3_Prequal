@@ -85,7 +85,7 @@
 ## 2. Cloudera Manger 구성
 
 ```
-1. CM 5.15.2 Repo 설정
+1. CM 5.15.2 Repo 설정 (모든 host)
  sudo yum install -y wget
  sudo wget https://archive.cloudera.com/cm5/redhat/7/x86_64/cm/cloudera-manager.repo -P /etc/yum.repos.d/
  sudo vi /etc/yum.repos.d/cloudera-manager.repo 편집하여 아래내용 변경
@@ -100,15 +100,15 @@
     cd mysql-connector-java-5.1.47
     sudo cp mysql-connector-java-5.1.47-bin.jar /usr/share/java/mysql-connector-java.jar
     
- 3. yum Install CM
+ 3. yum Install CM (CM host)
    sudo yum install -y cloudera-manager-daemons cloudera-manager-server
   
- 4. Install MySQL server
+ 4. Install MySQL server (CM host)
    sudo yum install -y mariadb-server
    sudo systemctl enable mariadb
    sudo systemctl start mariadb
  
- 5. MySQL DB생성 및 권한부여
+ 5. MySQL DB생성 및 권한부여 (CM host)
   CREATE DATABASE scm DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
   CREATE DATABASE amon DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
   CREATE DATABASE rman DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
@@ -129,12 +129,10 @@
   GRANT ALL ON navms.* TO 'navms'@'%' IDENTIFIED BY 'password';
   GRANT ALL ON oozie.* TO 'oozie'@'%' IDENTIFIED BY 'password';
 
-  FLUSH PRIVILEGES;
-
   SHOW DATABASES;
-  SELECT VERSION();
+ 
   EXIT;
-  
+  ![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/databases.PNG?raw=true)
   
   
   
