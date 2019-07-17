@@ -1,4 +1,4 @@
-# Prequal 실습 (첨부파일 참고)
+# Prequal 실습 (첨부파일 참고 부탁드립니다.)
 ## 1. System Configuration Check
 ```
 1. Check vm.swappiness on all your nodes
@@ -66,7 +66,7 @@
  sudo vi /etc/yum.repos.d/cloudera-manager.repo 편집하여 아래내용 변경
  baseurl=https://archive.cloudera.com/cm5/redhat/7/x86_64/cm/5.15.2/
 
-2. JDK, JDBC 설치
+2. JDK, JDBC 설치(모든 host)
  1) jdk -> sudo yum install oracle-j2sdk1.7 
  2) jdbc -> 
     wget https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.47.tar.gz
@@ -75,6 +75,43 @@
     cd mysql-connector-java-5.1.47
     sudo cp mysql-connector-java-5.1.47-bin.jar /usr/share/java/mysql-connector-java.jar
     
-    
+ 3. yum Install CM
+   sudo yum install -y cloudera-manager-daemons cloudera-manager-server
+  
+ 4. Install MySQL server
+   sudo yum install -y mariadb-server
+   sudo systemctl enable mariadb
+   sudo systemctl start mariadb
+ 
+ 5. MySQL DB생성 및 권한부여
+  CREATE DATABASE scm DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
+  CREATE DATABASE amon DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
+  CREATE DATABASE rman DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
+  CREATE DATABASE hue DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
+  CREATE DATABASE metastore DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
+  CREATE DATABASE sentry DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
+  CREATE DATABASE nav DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
+  CREATE DATABASE navms DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
+  CREATE DATABASE oozie DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
+
+  GRANT ALL ON scm.* TO 'scm'@'%' IDENTIFIED BY 'password';
+  GRANT ALL ON amon.* TO 'amon'@'%' IDENTIFIED BY 'password';
+  GRANT ALL ON rman.* TO 'rman'@'%' IDENTIFIED BY 'password';
+  GRANT ALL ON hue.* TO 'hue'@'%' IDENTIFIED BY 'password';
+  GRANT ALL ON metastore.* TO 'hive'@'%' IDENTIFIED BY 'password';
+  GRANT ALL ON sentry.* TO 'sentry'@'%' IDENTIFIED BY 'password';
+  GRANT ALL ON nav.* TO 'nav'@'%' IDENTIFIED BY 'password';
+  GRANT ALL ON navms.* TO 'navms'@'%' IDENTIFIED BY 'password';
+  GRANT ALL ON oozie.* TO 'oozie'@'%' IDENTIFIED BY 'password';
+
+  FLUSH PRIVILEGES;
+
+  SHOW DATABASES;
+  SELECT VERSION();
+  EXIT;
+  
+  
+  
+  
 
 ```
