@@ -145,3 +145,9 @@ sudo rm /etc/cloudera-scm-server/db.mgmt.properties
 sudo systemctl start cloudera-scm-server
 sudo tail -f /var/log/cloudera-scm-server/cloudera-scm-server.log --> 로그 확인
 ```
+##3. Install a cluster and deploy CDH
+```
+host에 node 명 입력 하여 connection test
+```
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/host.PNG?raw=true)
+```
