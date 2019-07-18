@@ -247,9 +247,11 @@ sudo usermod -aG wheel training --> sudo 권한
 
 mysql -u root -p
 GRANT ALL ON *.* TO 'training'@'%' IDENTIFIED BY 'training';
-
 ```
-  
+```
+su training
+pyspark2
+```
   
   
  
