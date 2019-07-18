@@ -32,7 +32,7 @@
  3) 권한 변경 -> chmod +x /etc/rc.d/rc.local 
  4) sudo vi /etc/default/grub 편집하여 아래내용 추가
     transparent_hugepage=never
- 5) 명령어 실행 -> grub2-mkconfig -o /boot/grub2/grub.cfg
+ 5) 명령어 실행 -> sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 
 ```
 ![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/5.png?raw=true)
