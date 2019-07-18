@@ -59,7 +59,7 @@
 ![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/10.png?raw=true)
 ```
    
- 4) /etc/hosts 설정
+ 4) /etc/hosts 설정 (private IP, sudo vi로 실행)
    172.31.0.147 nd1.team3.com nd1
    172.31.2.54 nd2.team3.com nd2
    172.31.7.7 nd3.team3.com nd3
