@@ -238,13 +238,13 @@ ls 하면 spark2 jar가 생겼다.
 ![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/Spark4.png?raw=true)
 ![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/Spark5.png?raw=true)
 
-
+```
 user 추가 (all host)
 sudo useradd training -u 3800
 sudo passwd training
 
 sudo usermod -aG wheel training --> sudo 권한
-  
+  ```
   
   
   
