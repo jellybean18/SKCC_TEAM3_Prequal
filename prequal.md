@@ -215,7 +215,28 @@ sudo tail -f /var/log/cloudera-scm-server/cloudera-scm-server.log --> 로그 확
 
 ```
 spark2
-https://www.cloudera.com/documentation/spark2/latest/topics/spark2_installing.html
+(참고https://www.cloudera.com/documentation/spark2/latest/topics/spark2_installing.html)
+
+호스트 > Parcel > (우측 상단)구성 들어가서
+'원격 Parcel 리포지토리 URL'에 아래 url 추가
+http://archive.cloudera.com/spark2/parcels/2.4.0.cloudera2/
+
+다음으로 CM Host 접속해서
+cd /opt/cloudera/csd
+ls 하면 아무것도 없다
+sudo wget http://archive.cloudera.com/spark2/csd/SPARK2_ON_YARN-2.4.0.cloudera2.jar
+ls 하면 spark2 jar가 생겼다.
+재시작 sudo systemctl restart cloudera-scm-server
+이제 CM 들어가서 서비스 추가 => 가보면 spark2가 있다. 추가한다.
+```
+
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/Spark1.png?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/Spark2.png?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/Spark3.png?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/Spark4.png?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/Spark5.png?raw=true)
+
+
 
   
   
