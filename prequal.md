@@ -109,6 +109,28 @@
    sudo systemctl start mariadb
    sudo /usr/bin/mysql_secure_installation
    
+   [...]
+Enter current password for root (enter for none):
+OK, successfully used password, moving on...
+[...]
+Set root password? [Y/n] Y
+New password:
+Re-enter new password:
+[...]
+Remove anonymous users? [Y/n] Y
+[...]
+Disallow root login remotely? [Y/n] N
+[...]
+Remove test database and access to it [Y/n] Y
+[...]
+Reload privilege tables now? [Y/n] Y
+[...]
+All done!  If you've completed all of the above steps, your MariaDB
+installation should now be secure.
+
+Thanks for using MariaDB!
+
+   
  5. MySQL DB생성 및 권한부여 (CM host)
  mysql -u root -p --> db 접속
  
