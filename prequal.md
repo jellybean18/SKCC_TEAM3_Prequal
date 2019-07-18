@@ -213,7 +213,9 @@ sudo tail -f /var/log/cloudera-scm-server/cloudera-scm-server.log --> 로그 확
 ![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/Kafka4.png?raw=true)
 
 
-
+```
+spark2
+https://www.cloudera.com/documentation/spark2/latest/topics/spark2_installing.html
 
   
   
