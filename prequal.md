@@ -208,9 +208,9 @@ sudo tail -f /var/log/cloudera-scm-server/cloudera-scm-server.log --> 로그 확
 ```
 
 ![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/Kafka1.png?raw=true)
-![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/Kafka2.PNG?raw=true)
-![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/Kafka3.PNG?raw=true)
-![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/Kafka4.PNG?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/Kafka2.png?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/Kafka3.png?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/Kafka4.png?raw=true)
 
 
 
