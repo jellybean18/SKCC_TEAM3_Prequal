@@ -183,6 +183,14 @@ sudo tail -f /var/log/cloudera-scm-server/cloudera-scm-server.log --> 로그 확
 3. install 완료 후 설치 서비스 선택하여 DB 정보 입력
 ```
 ![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/db_test.PNG?raw=true)
+
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/ClusterCfg-1.png?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/ClusterCfg-2.png?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/ClusterCfg-3.png?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/ClusterCfg-4.png?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/ClusterCfg-5-1.png?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/ClusterCfg-5-2.png?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/ClusterCfg-6.png?raw=true)
 ```
 4. 모든 설치 완료 된 모습
 ```
