@@ -252,6 +252,15 @@ GRANT ALL ON *.* TO 'training'@'%' IDENTIFIED BY 'training';
 su training
 pyspark2
 ```
-  
+```
+ssh -i skcc.pem training@13.124.108.78
+scp all.zip training@13.124.108.78:. (IP는 CM Host의 퍼블릭IP)
+yum install -y unzip
+unzip all.zip
+./setup.sh
+
+
+
+```
   
  
