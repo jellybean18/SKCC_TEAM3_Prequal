@@ -253,8 +253,8 @@ su training
 pyspark2
 ```
 ```
-ssh -i skcc.pem training@13.124.108.78
-scp all.zip training@13.124.108.78:. (IP는 CM Host의 퍼블릭IP)
+ssh -i skcc.pem training@13.124.108.78 (IP는 Imapala가 있는 한 DataNode의 퍼블릭IP)
+scp all.zip training@13.124.108.78:. 
 yum install -y unzip
 unzip all.zip
 ./setup.sh
