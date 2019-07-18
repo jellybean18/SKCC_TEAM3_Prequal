@@ -105,9 +105,10 @@
   
  4. Install MySQL server (CM host)
    sudo yum install -y mariadb-server
-   sudo systemctl enable mariadb
+   sudo systemctl enable mariadb (안되면 재설치)
    sudo systemctl start mariadb
- 
+   sudo /usr/bin/mysql_secure_installation
+   
  5. MySQL DB생성 및 권한부여 (CM host)
  mysql -u root -p --> db 접속
  
