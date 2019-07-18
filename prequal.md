@@ -205,8 +205,8 @@ sudo tail -f /var/log/cloudera-scm-server/cloudera-scm-server.log --> 로그 확
 - parcel(package) 에서 Kafka 패키지 "다운로드" -> "배포" -> "활성" 수행  
   cluster 메뉴에서 Kafka 서비스 추가
   -> 브로커는 데이터노드에, 게이트웨이는 전체 노드에
-```
-![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/Kafka1.PNG?raw=true)
+
+![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/Kafka1.png?raw=true)
 ![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/Kafka2.PNG?raw=true)
 ![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/Kafka3.PNG?raw=true)
 ![photo.PNG](https://github.com/jellybean18/SKCC_TEAM3_Prequal/blob/master/image/0718/Kafka4.PNG?raw=true)
